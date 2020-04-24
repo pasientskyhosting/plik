@@ -15,7 +15,7 @@ import (
 
 	"github.com/root-gg/utils"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 // Create creates a new empty upload on the Plik Server and return the upload metadata

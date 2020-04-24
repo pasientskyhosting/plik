@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 type tokenFlagParams struct {

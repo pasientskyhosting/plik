@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/root-gg/plik/server/metadata"
+	"github.com/pasientskyhosting/plik/server/metadata"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/root-gg/plik/server/common"
-	data_test "github.com/root-gg/plik/server/data/testing"
+	"github.com/pasientskyhosting/plik/server/common"
+	data_test "github.com/pasientskyhosting/plik/server/data/testing"
 )
 
 func newPlikServer() (ps *PlikServer) {

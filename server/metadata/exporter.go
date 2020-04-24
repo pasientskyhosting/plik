@@ -8,7 +8,7 @@ import (
 
 	"github.com/golang/snappy"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 type metadataType int

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/root-gg/plik/client/crypto/openssl"
-	"github.com/root-gg/plik/client/crypto/pgp"
+	"github.com/pasientskyhosting/plik/client/crypto/openssl"
+	"github.com/pasientskyhosting/plik/client/crypto/pgp"
 )
 
 // Backend interface describe methods that the different

@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 func TestIsWhitelistedAlreadyInContext(t *testing.T) {

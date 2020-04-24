@@ -15,7 +15,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 // Config metadata backend configuration

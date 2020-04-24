@@ -19,10 +19,10 @@ import (
 	"github.com/olekukonko/ts"
 	"github.com/root-gg/utils"
 
-	"github.com/root-gg/plik/client/archive"
-	"github.com/root-gg/plik/client/crypto"
-	"github.com/root-gg/plik/plik"
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/client/archive"
+	"github.com/pasientskyhosting/plik/client/crypto"
+	"github.com/pasientskyhosting/plik/plik"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 // Vars

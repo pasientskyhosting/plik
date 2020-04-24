@@ -7,8 +7,8 @@ import (
 	"github.com/dustin/go-humanize"
 	"github.com/spf13/cobra"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/server"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/server"
 )
 
 type fileFlagParams struct {

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 // UserInfo return user information ( name / email / ... )

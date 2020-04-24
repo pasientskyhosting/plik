@@ -13,9 +13,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/context"
-	data_test "github.com/root-gg/plik/server/data/testing"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/context"
+	data_test "github.com/pasientskyhosting/plik/server/data/testing"
 )
 
 func createTestFile(ctx *context.Context, file *common.File, reader io.Reader) (err error) {

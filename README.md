@@ -1,9 +1,3 @@
-[![Build Status](https://travis-ci.org/root-gg/plik.svg?branch=master)](https://travis-ci.org/root-gg/plik)
-[![Go Report](https://img.shields.io/badge/Go_report-A+-brightgreen.svg)](http://goreportcard.com/report/root-gg/plik)
-[![Docker Pulls](https://img.shields.io/docker/pulls/rootgg/plik.svg)](https://hub.docker.com/r/rootgg/plik)
-[![GoDoc](https://godoc.org/github.com/root-gg/plik?status.svg)](https://godoc.org/github.com/root-gg/plik)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
-
 # Plik
 
 Plik is a scalable & friendly temporary file upload system ( wetransfer like ) in golang.
@@ -26,44 +20,29 @@ Plik is a scalable & friendly temporary file upload system ( wetransfer like ) i
    - [plikSharp](https://github.com/iss0/plikSharp) : A .NET API client for Plik
 
 ### Version
-1.3-RC1
+1.3
 
 ### Installation
 
 ##### From release
 To run plik, it's very simple :
 ```sh
-$ wget https://github.com/root-gg/plik/releases/download/1.3-RC1/plik-1.3-RC1-linux-64bits.tar.gz
-$ tar xzvf plik-1.3-RC1-linux-64bits.tar.gz
-$ cd plik-1.3-RC1/server
+$ wget https://github.com/pasientskyhosting/plik/releases/download/1.3/plik-1.3-linux-64bits.tar.gz
+$ tar xzvf plik-1.3-linux-64bits.tar.gz
+$ cd plik-1.3/server
 $ ./plikd
 ```
 Et voilà ! You now have a fully functional instance of Plik running on http://127.0.0.1:8080.  
 You can edit server/plikd.cfg to adapt the configuration to your needs (ports, ssl, ttl, backend params,...)
-
-##### From root.gg Debian repository
-
-Configure root.gg repository and install server and/or client
-```
-wget -O - http://mir.root.gg/gg.key | apt-key add -
-echo "deb http://mir.root.gg/ $(lsb_release --codename --short) main" > /etc/apt/sources.list.d/root.gg.list
-apt-get update
-apt-get install plikd plik
-```
-
-Edit server configuration at /etc/plikd.cfg and start the server 
-```
-service plikd start
-```
 
 ##### From sources
 To compile plik from sources, you'll need golang and npm installed on your system.
 
 First, get the project and libs via go get :
 ```sh
-$ go get github.com/root-gg/plik/server
-go/src/github.com/root-gg/plik/server/handlers/misc.go:51: undefined: common.GetBuildInfo <== ignore this warning
-$ cd $GOPATH/src/github.com/root-gg/plik/
+$ go get github.com/pasientskyhosting/plik/server
+go/src/github.com/pasientskyhosting/plik/server/handlers/misc.go:51: undefined: common.GetBuildInfo <== ignore this warning
+$ cd $GOPATH/src/github.com/pasientskyhosting/plik/
 ```
 
 Build everything and run it :

@@ -11,20 +11,20 @@ import (
 	"sync"
 	"time"
 
-	"github.com/root-gg/plik/server/data/s3"
+	"github.com/pasientskyhosting/plik/server/data/s3"
 
 	"github.com/gorilla/mux"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/context"
-	"github.com/root-gg/plik/server/data"
-	"github.com/root-gg/plik/server/data/file"
-	"github.com/root-gg/plik/server/data/stream"
-	"github.com/root-gg/plik/server/data/swift"
-	data_test "github.com/root-gg/plik/server/data/testing"
-	"github.com/root-gg/plik/server/handlers"
-	"github.com/root-gg/plik/server/metadata"
-	"github.com/root-gg/plik/server/middleware"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/data"
+	"github.com/pasientskyhosting/plik/server/data/file"
+	"github.com/pasientskyhosting/plik/server/data/stream"
+	"github.com/pasientskyhosting/plik/server/data/swift"
+	data_test "github.com/pasientskyhosting/plik/server/data/testing"
+	"github.com/pasientskyhosting/plik/server/handlers"
+	"github.com/pasientskyhosting/plik/server/metadata"
+	"github.com/pasientskyhosting/plik/server/middleware"
 )
 
 // PlikServer is a Plik Server instance

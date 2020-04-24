@@ -9,11 +9,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 
 	"github.com/camathieu/pb"
 
-	"github.com/root-gg/plik/plik"
+	"github.com/pasientskyhosting/plik/plik"
 )
 
 // Progress manage the progress bar pool

@@ -5,7 +5,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 // File retrieve the requested file metadata from the metadataBackend and save it in the request context.

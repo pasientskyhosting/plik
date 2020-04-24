@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"sync"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/data"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/data"
 )
 
 // Ensure Testing Data Backend implements data.Backend interface

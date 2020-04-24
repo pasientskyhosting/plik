@@ -1,6 +1,6 @@
 package metadata
 
-import "github.com/root-gg/plik/server/common"
+import "github.com/pasientskyhosting/plik/server/common"
 
 // GetUploadStatistics return statistics about uploads
 // for userID and tokenStr params : nil doesn't activate the filter, empty string enables the filter with an empty value to generate statistics about anonymous upload

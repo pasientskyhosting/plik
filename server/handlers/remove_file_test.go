@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 func TestRemoveFile(t *testing.T) {

@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/root-gg/plik/server/server"
+	"github.com/pasientskyhosting/plik/server/server"
 
 	"github.com/root-gg/utils"
 	"github.com/spf13/cobra"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 type userFlagParams struct {

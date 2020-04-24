@@ -118,9 +118,9 @@ import (
 	"sync"
 
 	"github.com/root-gg/logger"
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/data"
-	"github.com/root-gg/plik/server/metadata"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/data"
+	"github.com/pasientskyhosting/plik/server/metadata"
 )
 
 EOF

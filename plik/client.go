@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"runtime"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/version"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/version"
 )
 
 // Client manage the process of communicating with a Plik server via the HTTP API

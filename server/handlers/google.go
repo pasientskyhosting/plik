@@ -12,8 +12,8 @@ import (
 	"golang.org/x/oauth2/google"
 	api_oauth2 "google.golang.org/api/oauth2/v2"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 var googleEndpointContextKey = "google_endpoint"

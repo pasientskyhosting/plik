@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 // UploadsCleaningRoutine periodicaly remove expired uploads

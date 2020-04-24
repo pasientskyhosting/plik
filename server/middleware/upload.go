@@ -9,7 +9,7 @@ import (
 
 	"github.com/root-gg/utils"
 
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 // Upload retrieve the requested upload metadata from the metadataBackend and save it to the request context.

@@ -103,7 +103,7 @@ fi
 # Setup temporary build environment
 ###
 
-PLIK_PACKAGE="github.com/root-gg/plik"
+PLIK_PACKAGE="github.com/pasientskyhosting/plik"
 TMPDIR=$(mktemp -d)
 export GOPATH="$TMPDIR"
 BUILD_PATH="$GOPATH/src/$PLIK_PACKAGE"

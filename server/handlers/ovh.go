@@ -11,8 +11,8 @@ import (
 
 	"github.com/dgrijalva/jwt-go"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 type ovhError struct {

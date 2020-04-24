@@ -5,7 +5,7 @@ sudo: required
 go:
   - 1.14
 
-go_import_path: github.com/root-gg/plik
+go_import_path: github.com/pasientskyhosting/plik
 
 before_install:
   # Update node_js version : https://github.com/travis-ci/travis-ci/issues/7108

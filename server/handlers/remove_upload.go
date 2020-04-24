@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 // RemoveUpload remove an upload and all associated files

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/root-gg/plik/client/archive/tar"
-	"github.com/root-gg/plik/client/archive/zip"
+	"github.com/pasientskyhosting/plik/client/archive/tar"
+	"github.com/pasientskyhosting/plik/client/archive/zip"
 )
 
 // Backend interface describe methods that the different

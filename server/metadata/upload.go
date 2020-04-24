@@ -7,7 +7,7 @@ import (
 	"github.com/jinzhu/gorm"
 	paginator "github.com/pilagod/gorm-cursor-paginator"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 // CreateUpload create a new upload in DB

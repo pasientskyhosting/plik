@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 
 	"github.com/stretchr/testify/require"
 )

@@ -5,7 +5,7 @@ Plik library is a Golang library to upload files to a Plik server.
 ### Installation
 
 ```
-go get -v github.com/root-gg/plik/plik
+go get -v github.com/pasientskyhosting/plik/plik
 ```
 
 #### 1 Easy mode

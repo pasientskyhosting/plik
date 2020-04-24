@@ -9,8 +9,8 @@ import (
 	"github.com/boombuler/barcode"
 	"github.com/boombuler/barcode/qr"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/context"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/context"
 )
 
 // GetVersion return the build information.

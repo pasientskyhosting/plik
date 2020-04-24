@@ -2,9 +2,7 @@ SHELL = /bin/bash
 
 RELEASE_VERSION=$(shell version/version.sh)
 RELEASE_DIR="release/plik-$(RELEASE_VERSION)"
-RELEASE_TARGETS=darwin-386 darwin-amd64 freebsd-386 \
-freebsd-amd64 linux-386 linux-amd64 linux-arm openbsd-386 \
-openbsd-amd64 windows-amd64 windows-386
+RELEASE_TARGETS=darwin-amd64 linux-amd64 windows-amd64
 
 GOHOSTOS=$(shell go env GOHOSTOS)
 GOHOSTARCH=$(shell go env GOHOSTARCH)
@@ -203,7 +201,7 @@ lint:
 # Run fmt
 ###
 fmt:
-	@goimports -w -l -local "github.com/root-gg/plik" $(shell find . -type f -name '*.go' -not -path "./vendor/*")
+	@goimports -w -l -local "github.com/pasientskyhosting/plik" $(shell find . -type f -name '*.go' -not -path "./vendor/*")
 
 ###
 # Run tests
@@ -224,7 +222,7 @@ test-backends:
 # Build docker
 ###
 docker:
-	docker build -t rootgg/plik:$(RELEASE_VERSION) .
+	docker build -t pasientskyhosting/plik:$(RELEASE_VERSION) .
 
 ###
 # Remove server build files

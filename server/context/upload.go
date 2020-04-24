@@ -1,6 +1,6 @@
 package context
 
-import "github.com/root-gg/plik/server/common"
+import "github.com/pasientskyhosting/plik/server/common"
 
 // ConfigureUploadFromContext assign context values to upload
 func (ctx *Context) ConfigureUploadFromContext(upload *common.Upload) {

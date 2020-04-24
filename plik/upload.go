@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/root-gg/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/common"
 )
 
 // UploadParams store the different options available when uploading file to a Plik server

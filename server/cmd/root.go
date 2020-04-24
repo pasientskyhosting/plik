@@ -8,13 +8,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/root-gg/plik/server/data"
+	"github.com/pasientskyhosting/plik/server/data"
 
 	"github.com/spf13/cobra"
 
-	"github.com/root-gg/plik/server/common"
-	"github.com/root-gg/plik/server/metadata"
-	"github.com/root-gg/plik/server/server"
+	"github.com/pasientskyhosting/plik/server/common"
+	"github.com/pasientskyhosting/plik/server/metadata"
+	"github.com/pasientskyhosting/plik/server/server"
 )
 
 var configPath string

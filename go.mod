@@ -1,4 +1,4 @@
-module github.com/root-gg/plik
+module github.com/pasientskyhosting/plik
 
 go 1.14
 

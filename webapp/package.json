@@ -3,7 +3,7 @@
   "description": "This is the web frontend of plik upload system",
   "repository": {
     "type": "git",
-    "url": "git://github.com/root-gg/plik.git"
+    "url": "git://github.com/pasientskyhosting/plik.git"
   },
   "license": "MIT",
   "readme": "README.md",

@@ -23,3 +23,4 @@ plikd_*.cfg
 .idea
 plik.iml
 coverage.out
+.DS_Store
