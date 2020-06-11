@@ -52,8 +52,8 @@ func NewPlikServer(config *common.Configuration) (ps *PlikServer) {
 	ps = new(PlikServer)
 	ps.config = config
 
-	ps.cleaningRandomDelay = 3600
-	ps.cleaningMinOffset = 7200
+	ps.cleaningRandomDelay = 180
+	ps.cleaningMinOffset = 180
 
 	return ps
 }

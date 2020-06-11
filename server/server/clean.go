@@ -20,7 +20,7 @@ func (ps *PlikServer) uploadsCleaningRoutine() {
 		if done {
 			break
 		}
-		// Sleep between 2 hours and 3 hours
+		// Sleep between 3 and 6 minutes
 		// This is a dirty trick to avoid frontends doing this at the same time
 		r, _ := rand.Int(rand.Reader, big.NewInt(int64(ps.cleaningRandomDelay)))
 		randomSleep := r.Int64() + int64(ps.cleaningMinOffset)
