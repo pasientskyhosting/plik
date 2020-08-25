@@ -36,7 +36,7 @@
             <div class="menu-item" ng-show="config.protectedByPassword">
                 <label class="switch-input">
                     <input name="checkbox-password" type="checkbox" ng-model="$parent.password"
-                           ng-change="upload.password = ''">
+                           ng-change="upload.password = ''" ng-disabled="config.protectedByPasswordForce">
                     <i data-swoff-text="OFF" data-swon-text="ON"></i> Password
                     <a tooltip-placement="right"
                        uib-tooltip="Protect your upload with credentials. You will be prompted for them before the upload and before the download.">?</a>

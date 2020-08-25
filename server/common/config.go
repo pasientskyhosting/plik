@@ -37,20 +37,21 @@ type Configuration struct {
 	SourceIPHeader  string   `json:"-"`
 	UploadWhitelist []string `json:"-"`
 
-	Authentication       bool     `json:"authentication"`
-	NoAnonymousUploads   bool     `json:"noAnonymousUploads"`
-	OneShot              bool     `json:"oneShot"`
-	Removable            bool     `json:"removable"`
-	Stream               bool     `json:"stream"`
-	ProtectedByPassword  bool     `json:"protectedByPassword"`
-	GoogleAuthentication bool     `json:"googleAuthentication"`
-	GoogleAPISecret      string   `json:"-"`
-	GoogleAPIClientID    string   `json:"-"`
-	GoogleValidDomains   []string `json:"-"`
-	OvhAuthentication    bool     `json:"ovhAuthentication"`
-	OvhAPIEndpoint       string   `json:"ovhApiEndpoint"`
-	OvhAPIKey            string   `json:"-"`
-	OvhAPISecret         string   `json:"-"`
+	Authentication           bool     `json:"authentication"`
+	NoAnonymousUploads       bool     `json:"noAnonymousUploads"`
+	OneShot                  bool     `json:"oneShot"`
+	Removable                bool     `json:"removable"`
+	Stream                   bool     `json:"stream"`
+	ProtectedByPassword      bool     `json:"protectedByPassword"`
+	ProtectedByPasswordForce bool     `json:"protectedByPasswordForce"`
+	GoogleAuthentication     bool     `json:"googleAuthentication"`
+	GoogleAPISecret          string   `json:"-"`
+	GoogleAPIClientID        string   `json:"-"`
+	GoogleValidDomains       []string `json:"-"`
+	OvhAuthentication        bool     `json:"ovhAuthentication"`
+	OvhAPIEndpoint           string   `json:"ovhApiEndpoint"`
+	OvhAPIKey                string   `json:"-"`
+	OvhAPISecret             string   `json:"-"`
 
 	MetadataBackendConfig map[string]interface{} `json:"-"`
 
@@ -81,6 +82,7 @@ func NewConfiguration() (config *Configuration) {
 	config.OneShot = true
 	config.Removable = true
 	config.ProtectedByPassword = true
+	config.ProtectedByPasswordForce = false
 
 	config.OvhAPIEndpoint = "https://eu.api.ovh.com/1.0"
 

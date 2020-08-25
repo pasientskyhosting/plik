@@ -12,13 +12,13 @@ plik.controller('MainCtrl', [
 
     $scope.upload = {}
     $scope.files = []
-    $scope.password = false
 
     // Get server config
     $config
       .getConfig()
       .then(function (config) {
         $scope.config = config
+        $scope.password = config.protectedByPasswordForce
         $scope.setDefaultTTL()
       })
       .then(null, function (error) {
