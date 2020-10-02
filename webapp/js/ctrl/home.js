@@ -101,16 +101,28 @@ plik.controller('HomeCtrl', ['$scope', '$api', '$config', '$dialog', '$location'
 
         // Remove an upload
         $scope.deleteUpload = function (upload) {
-            $api.removeUpload(upload)
-                .then(function () {
-                    $scope.uploads = _.reject($scope.uploads, function (u) {
-                        return u.id === upload.id;
+            $dialog
+            .alert({
+              title: 'Really ?',
+              message: 'This will remove ' + upload.files.length + ' file(s) from the server',
+              confirm: true
+            })
+            .result.then(
+                function () {
+                    $api.removeUpload(upload)
+                    .then(function () {
+                        $scope.uploads = _.reject($scope.uploads, function (u) {
+                            return u.id === upload.id;
+                        });
+                    })
+                    .then(null, function (error) {
+                        $dialog.alert(error);
                     });
-                })
-                .then(null, function (error) {
-                    $dialog.alert(error);
+                },
+                function () {
+                    // Avoid "Possibly unhandled rejection"
                 });
-        };
+            };
 
         // Delete all user uploads
         $scope.deleteUploads = function () {
