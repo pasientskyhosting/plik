@@ -309,22 +309,30 @@ plik.controller('MainCtrl', [
     }
 
     // Remove a file from the servers
-    $scope.deleteFile = function (file) {
+    $scope.removeUpload = function () {
       if (!$scope.upload.removable && !$scope.upload.admin) return
-      $api
-        .removeFile($scope.upload, file)
-        .then(function () {
-          $scope.files = _.reject($scope.files, function (f) {
-            return f.metadata.id === file.metadata.id
-          })
-          // Redirect to main page if no more files
-          if (!$scope.files.length) {
-            $scope.mainpage()
+
+      $dialog
+        .alert({
+          title: 'Really ?',
+          message: 'This will remove ' + $scope.files.length + ' file(s) from the server',
+          confirm: true
+        })
+        .result.then(
+          function () {
+            $api
+              .removeUpload($scope.upload)
+              .then(function () {
+                $scope.mainpage()
+              })
+              .then(null, function (error) {
+                $dialog.alert(error)
+              })
+          },
+          function () {
+            // Avoid "Possibly unhandled rejection"
           }
-        })
-        .then(null, function (error) {
-          $dialog.alert(error)
-        })
+        )
     }
 
     // Check if file is downloadable
